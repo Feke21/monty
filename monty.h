@@ -83,4 +83,8 @@ void  sub_function(stack_t **head, unsigned int counter);
 /** functio that divide the second to element by the top one of the  stack */
 void div_function(stack_t **head, unsigned int counter);
 
+/** function that multiplies the second top element of the stack with the top element of the stack */
+void mul_function(stack_t **head, unsigned int counter);
+
+
 #endif
