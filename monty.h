@@ -86,4 +86,7 @@ void swap_function(stack_t **head, unsigned int counter);
 /** add top two element function */
 void add_function(stack_t **head, unsigned int counter);
 
+/** function that do nothing */
+void nop_function(stack_t **head, unsigned int counter);
+
 #endif
