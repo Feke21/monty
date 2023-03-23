@@ -92,4 +92,7 @@ void nop_function(stack_t **head, unsigned int counter);
 /** substraction function */
 void  sub_function(stack_t **head, unsigned int counter);
 
+/** functio that divide the second to element by the top one of the  stack */
+void div_function(stack_t **head, unsigned int counter);
+
 #endif
