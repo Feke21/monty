@@ -21,3 +21,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 12. Prints the string starting at the top of the stack, followed by a new line
 
 13. Rotate stack to the top
+
+14. Rotate stack to the bottom
