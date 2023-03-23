@@ -80,4 +80,7 @@ void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 
+/** swap code function */
+void swap_function(stack_t **head, unsigned int counter);
+
 #endif
