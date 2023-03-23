@@ -59,25 +59,13 @@ typedef struct arg_s
 
 extern arg_t arg;
 
-/**
- * struct glob_s - globally useful variables, all rolled into one
- * @top: double pointer to top of stack
- * @ops: double pointer to an instruction struct
-**/
-typedef struct glob_s
-{
-	stack_t **top;
-	instruction_t **ops;
-} glob_t;
-
-extern glob_t glob;
-
 
 /** get opcodes function */
 void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
 
 /** instruction 1 */
-void pall(stack_t **stack, unsigned int line_number);
+void _push(stack_t **stack, unsigned int line_number);
+void _pall(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 
 #endif
