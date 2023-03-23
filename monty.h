@@ -98,4 +98,7 @@ void pstr_function(stack_t **head, unsigned int counter);
 /** rotate stack to the top */
 void rotl_function(stack_t **head, unsigned int counter);
 
+/** rotate stack to the bottom */
+void rotr_function(stack_t **head, __attribute__((unused)) unsigned int counter);
+
 #endif
