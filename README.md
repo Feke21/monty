@@ -13,3 +13,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 8. Multiplies the second top element of the stack with the top element of the stack
 
 9. Computes the rest of the division of the second top element of the stack by the top element of the stack
+
+10. Comments
