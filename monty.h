@@ -89,4 +89,7 @@ void add_function(stack_t **head, unsigned int counter);
 /** function that do nothing */
 void nop_function(stack_t **head, unsigned int counter);
 
+/** substraction function */
+void  sub_function(stack_t **head, unsigned int counter);
+
 #endif
