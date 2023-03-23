@@ -95,4 +95,7 @@ void pchar_function(stack_t **head, unsigned int counter);
 /** function that prints the string starting at the top of the stack, followed by a new line */
 void pstr_function(stack_t **head, unsigned int counter);
 
+/** rotate stack to the top */
+void rotl_function(stack_t **head, unsigned int counter);
+
 #endif
