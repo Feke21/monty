@@ -86,5 +86,7 @@ void div_function(stack_t **head, unsigned int counter);
 /** function that multiplies the second top element of the stack with the top element of the stack */
 void mul_function(stack_t **head, unsigned int counter);
 
+/** function that compute the division*/
+void mod_function(stack_t **head, unsigned int counter);
 
 #endif
