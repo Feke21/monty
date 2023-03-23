@@ -89,4 +89,7 @@ void mul_function(stack_t **head, unsigned int counter);
 /** function that compute the division*/
 void mod_function(stack_t **head, unsigned int counter);
 
+/** comments(do nothing) */
+void pchar_function(stack_t **head, unsigned int counter);
+
 #endif
