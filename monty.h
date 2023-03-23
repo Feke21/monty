@@ -60,8 +60,27 @@ extern glob_t glob;
 /* get_opcodes.c */
 void get_opcodes(stack_t **stack, char *op, unsigned int line_number);
 
-void _push(stack_t **stack, unsigned int line_number);
-void _pall(stack_t **stack, unsigned int line_number);
-void _pint(stack_t **stack, unsigned int line_number);
-void _pop(stack_t **stack, unsigned int line_number);
-void _swap(stack_t **head, unsigned int line_number);
+
+/** get opcodes function */
+void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
+
+/** instruction 1 */
+void pall(stack_t **stack, unsigned int line_number);
+void free_stack(stack_t **stack);
+
+/** swap code function */
+void swap_function(stack_t **head, unsigned int counter);
+
+/** add top two element function */
+void add_function(stack_t **head, unsigned int counter);
+
+/** function that do nothing */
+void nop_function(stack_t **head, unsigned int counter);
+
+/** substraction function */
+void  sub_function(stack_t **head, unsigned int counter);
+
+/** functio that divide the second to element by the top one of the  stack */
+void div_function(stack_t **head, unsigned int counter);
+
+#endif
