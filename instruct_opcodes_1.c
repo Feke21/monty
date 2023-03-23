@@ -10,22 +10,26 @@
 void _push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
+	char *op;
+	int num;
 
 	if (stack == NULL)
 	{
 		fprintf(stderr, "L%d: stack not found\n", line_number);
 		exit(EXIT_FAILURE);
 	}
+	op = strtok(NULL, DELIMS);
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
-		free_stack(stack);
+		free(stack);
 		exit(EXIT_FAILURE);
 	}
+	num = atoi(op, line_number);
+	new->n = num;
 	new->next = *stack;
 	new->prev = NULL;
-	new->n = arg.arg;
 
 	if (*stack != NULL)
 		(*stack)->prev = new;
@@ -33,13 +37,13 @@ void _push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pall - prints the data of all nodes in stack
+ * _pall - prints the data of all nodes in stack
  * @stack: pointer to the head node pointer of stack
- * @line_number: the line number
+ * @line_number: value of node
  *
  * Return: Nothing.
  */
-void pall(stack_t **stack, unsigned int line_number)
+void _pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
 	(void)line_number;
@@ -53,22 +57,39 @@ void pall(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * free_stack - frees all nodes in a stack
- * @stack: pointer to the head node pointer of stack
+ * _pint - prints value at top of stack
+ * @stack: double pointer to the first node
+ * @line_number: value of new node
  *
- * Return: Nothing.
+ * Return: nothing
  */
-void free_stack(stack_t **stack)
+void _pint(stack_t **stack, unsigned int line_number)
 {
-	stack_t *temp = NULL;
+	if (stack == NULL || *stack == NULL)
+	{
+		printf("L%u: can't pint, stack empty\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	printf("%d\n", (*stack)->n);
+}
+
+/**
+ * _pop - removes top element of stack
+ * @stack: double pointer to the first node
+ * @line_number: value of new node
+ *
+ * Return: nothing
+ */
+void _pop(stack_t **stack, unsigned int line_number)
+{
+	stack_t *new;
 
 	if (stack == NULL || *stack == NULL)
-		return;
-
-	while (*stack != NULL)
 	{
-		temp = (*stack)->next;
-		free(*stack);
-		*stack = temp;
+		printf("L%u: can't pop an empty stack\n", line_number);
+		exit(EXIT_FAILURE);
 	}
+	new  = *stack;
+	(*stack) = (*stack)->next;
+	free(new);
 }

@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
- * swap_function - adds the top two elements of the stack.
+ * _swap - adds the top two elements of the stack.
  * @head: stack head
- * @counter: line_number
+ * @line_number: line_number
  * Return: no return
 */
-void swap_function(stack_t **head, unsigned int counter)
+void _swap(stack_t **head, unsigned int line_number)
 {
 	stack_t *h;
 	int len = 0, aux;
@@ -18,10 +18,10 @@ void swap_function(stack_t **head, unsigned int counter)
 	}
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't swap, stack can no longer accomodate\n", counter);
+		fprintf(stderr, "L%d: can't swap, stack can no longer accomodate\n", line_number);
 		fclose(custom_file.file);
 		free(custom_file.content);
-		free_stack(*head);
+		free(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
