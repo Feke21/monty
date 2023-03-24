@@ -1,4 +1,8 @@
+## Descriptions
+
 This is the group project on C stacks and queues. Done by Favour and Emmanuel
+
+## Tasks
 
 3. Swapping top two element of the stack
 
@@ -33,3 +37,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 18. Multiply two digits given by the user
 
 19. Multiply two digits given by the user
+
+## Authors
