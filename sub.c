@@ -18,8 +18,8 @@ void _sub(stack_t **head, unsigned int counter)
 	if (nodes < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack is too limited\n", counter);
-		fclose(bus.file);
-		free(bus.content);
+		fclose(custom_file.file);
+		free(custom_file.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
