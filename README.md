@@ -39,3 +39,7 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 19. Multiply two digits given by the user
 
 ## Authors
+
+Favour Edubio - [Favour Edubio](https://github.com/Feke21)
+
+Emmanuel Mbumila - [Emmanuel Mbumila](https://github.com/embumila)
