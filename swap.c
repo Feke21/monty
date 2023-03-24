@@ -21,7 +21,7 @@ void _swap(stack_t **head, unsigned int line_number)
 		fprintf(stderr, "L%d: can't swap, stack can no longer accomodate\n", line_number);
 		fclose(custom_file.file);
 		free(custom_file.content);
-		free(*head);
+		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;

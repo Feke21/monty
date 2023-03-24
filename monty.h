@@ -85,7 +85,7 @@ char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
-void free(stack_t *head);
+void free_stack(stack_t *head);
 void  _sub(stack_t **head, unsigned int counter);
 
 /** functio that divide the second to element by the top one of the  stack */
