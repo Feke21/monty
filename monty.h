@@ -82,6 +82,10 @@ void _add(stack_t **head, unsigned int counter);
 void _nop(stack_t **head, unsigned int counter);
 
 
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+ssize_t getstdin(char **lineptr, int file);
+char  *clean_line(char *content);
+
 void  _sub(stack_t **head, unsigned int counter);
 
 /** functio that divide the second to element by the top one of the  stack */
