@@ -29,3 +29,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 16. A Brainf*ck script that prints School
 
 17. Add two digits given by the user
+
+18. Multiply two digits given by the user
