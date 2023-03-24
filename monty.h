@@ -74,13 +74,13 @@ void get_opcodes(stack_t **stack, char *op, unsigned int line_number);
 void get_opcoodes(stack_t **stack, char *op, unsigned int line_number);
 
 /** instruction 1 */
-void _push(stack_t **stack, unsigned int counter);
-void _pall(stack_t **stack, unsigned int counter);
-void free_stack(stack_t **stack);
+void _push(stack_t **head, unsigned int counter);
+void _pall(stack_t **head, unsigned int counter);
+void _pint(stack_t **head, unsigned int counter);
 void _swap(stack_t **head, unsigned int counter);
-void _add(stack_t **head, unsigned int counter);
 void _nop(stack_t **head, unsigned int counter);
 
+<<<<<<< HEAD
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
@@ -89,9 +89,12 @@ char  *clean_line(char *content);
 void  _sub(stack_t **head, unsigned int counter);
 
 /** functio that divide the second to element by the top one of the  stack */
+=======
+void _add(stack_t **head, unsigned int counter);
+void _sub(stack_t **head, unsigned int counter);
+>>>>>>> f5b51bda9795223ae1d2e61f27badaadb6d1d157
 void div_function(stack_t **head, unsigned int counter);
 
-/** function that multiplies the second top element of the stack with the top element of the stack */
 void mul_function(stack_t **head, unsigned int counter);
 
 /** function that compute the division*/
