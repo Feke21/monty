@@ -14,9 +14,9 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 
 9. Computes the rest of the division of the second top element of the stack by the top element of the stack
 
-10. Comments
+10. 
 
-11.
+11. Prints the char at the top of the stack, followed by a new line
 
 12. Prints the string starting at the top of the stack, followed by a new line
 
@@ -31,3 +31,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 17. Add two digits given by the user
 
 18. Multiply two digits given by the user
+
+19. Multiply two digits given by the user
