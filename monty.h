@@ -80,7 +80,6 @@ void _pint(stack_t **head, unsigned int counter);
 void _swap(stack_t **head, unsigned int counter);
 void _nop(stack_t **head, unsigned int counter);
 
-<<<<<<< HEAD
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
@@ -89,10 +88,9 @@ char  *clean_line(char *content);
 void  _sub(stack_t **head, unsigned int counter);
 
 /** functio that divide the second to element by the top one of the  stack */
-=======
 void _add(stack_t **head, unsigned int counter);
 void _sub(stack_t **head, unsigned int counter);
->>>>>>> f5b51bda9795223ae1d2e61f27badaadb6d1d157
+
 void div_function(stack_t **head, unsigned int counter);
 
 void mul_function(stack_t **head, unsigned int counter);
