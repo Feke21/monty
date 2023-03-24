@@ -23,3 +23,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 13. Rotate stack to the top
 
 14. Rotate stack to the bottom
+
+15. Sets the format of the data to a stack (LIFO)
