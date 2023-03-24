@@ -111,4 +111,9 @@ void _rotl(stack_t **head, unsigned int counter);
 /** rotate stack to the bottom */
 void _rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
 
+void addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
+void _queue(stack_t **head, unsigned int counter);
+void _stack(stack_t **head, unsigned int counter);
+
 #endif
