@@ -44,6 +44,15 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+typedef struct custom_file_s
+{
+	char *arg;
+	FILE *file;
+	char *content;
+	int lifi;
+}  custom_file_t;
+extern custom_file_t custom_file;
+
 /**
  * struct glob_s - globally useful variables, all rolled into one
  * @top: double pointer to top of stack
