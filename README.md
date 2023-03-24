@@ -25,3 +25,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 14. Rotate stack to the bottom
 
 15. Sets the format of the data to a stack (LIFO)
+
+16. A Brainf*ck script that prints School
