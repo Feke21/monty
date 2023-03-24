@@ -92,23 +92,23 @@ void  _sub(stack_t **head, unsigned int counter);
 void _add(stack_t **head, unsigned int counter);
 void _sub(stack_t **head, unsigned int counter);
 
-void div_function(stack_t **head, unsigned int counter);
+void _div(stack_t **head, unsigned int counter);
 
-void mul_function(stack_t **head, unsigned int counter);
+void _mul(stack_t **head, unsigned int counter);
 
 /** function that compute the division*/
-void mod_function(stack_t **head, unsigned int counter);
+void _mod(stack_t **head, unsigned int counter);
 
 /** comments(do nothing) */
-void pchar_function(stack_t **head, unsigned int counter);
+void _pchar(stack_t **head, unsigned int counter);
 
 /** function that prints the string starting at the top of the stack, followed by a new line */
-void pstr_function(stack_t **head, unsigned int counter);
+void _pstr(stack_t **head, unsigned int counter);
 
 /** rotate stack to the top */
-void rotl_function(stack_t **head, unsigned int counter);
+void _rotl(stack_t **head, unsigned int counter);
 
 /** rotate stack to the bottom */
-void rotr_function(stack_t **head, __attribute__((unused)) unsigned int counter);
+void _rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
 
 #endif
