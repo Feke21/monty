@@ -27,3 +27,5 @@ This is the group project on C stacks and queues. Done by Favour and Emmanuel
 15. Sets the format of the data to a stack (LIFO)
 
 16. A Brainf*ck script that prints School
+
+17. Add two digits given by the user
